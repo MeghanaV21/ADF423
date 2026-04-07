@@ -15,13 +15,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "DS_SQL_EXIST_OR_NOT",
-						"type": "DatasetReference"
-					},
-					"fieldList": [
-						"exists"
-					]
+					"fieldList": []
 				}
 			}
 		],
