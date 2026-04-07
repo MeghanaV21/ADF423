@@ -1,0 +1,9 @@
+{
+	"name": "AdfNestleprojectus",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "eaf91418-fef4-41de-95af-6f61ec765d85",
+		"tenantId": "311f82b8-ae27-492b-8b15-09739ef03ae9"
+	}
+}

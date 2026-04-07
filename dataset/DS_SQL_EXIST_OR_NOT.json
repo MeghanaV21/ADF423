@@ -1,0 +1,31 @@
+{
+	"name": "DS_SQL_EXIST_OR_NOT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_EXIST_OR_NOT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "movieId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "title",
+				"type": "varchar"
+			},
+			{
+				"name": "genres",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "movies"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
