@@ -1,0 +1,168 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "AdfNestleprojectus"
+		},
+		"LS_LKUP_MAXVALUE_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_LKUP_MAXVALUE'"
+		},
+		"LS_ON_PREM_SQL_SERVER_DW_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_ON_PREM_SQL_SERVER_DW'"
+		},
+		"LS_SQL_EXIST_OR_NOT_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQL_EXIST_OR_NOT'"
+		},
+		"LS_SQL_MIGRATION_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQL_MIGRATION'"
+		},
+		"LS_SQL_PARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_PARQUET'"
+		},
+		"LS_LKUP_MAXVALUE_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "."
+		},
+		"LS_LKUP_MAXVALUE_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_LKUP_MAXVALUE_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Meghana"
+		},
+		"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "."
+		},
+		"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Meghana"
+		},
+		"LS_SQL_EXIST_OR_NOT_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": ".\\SQLEXPRESS"
+		},
+		"LS_SQL_EXIST_OR_NOT_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "Movies"
+		},
+		"LS_SQL_EXIST_OR_NOT_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "."
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Meghana"
+		},
+		"LS_SQL_PARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevnestleprojectus.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "AdfNestleprojectus_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"LS_LKUP_MAXVALUE_password": {
+						"value": "[parameters('LS_LKUP_MAXVALUE_password')]"
+					},
+					"LS_ON_PREM_SQL_SERVER_DW_password": {
+						"value": "[parameters('LS_ON_PREM_SQL_SERVER_DW_password')]"
+					},
+					"LS_SQL_EXIST_OR_NOT_password": {
+						"value": "[parameters('LS_SQL_EXIST_OR_NOT_password')]"
+					},
+					"LS_SQL_MIGRATION_password": {
+						"value": "[parameters('LS_SQL_MIGRATION_password')]"
+					},
+					"LS_SQL_PARQUET_accountKey": {
+						"value": "[parameters('LS_SQL_PARQUET_accountKey')]"
+					},
+					"LS_LKUP_MAXVALUE_properties_typeProperties_server": {
+						"value": "[parameters('LS_LKUP_MAXVALUE_properties_typeProperties_server')]"
+					},
+					"LS_LKUP_MAXVALUE_properties_typeProperties_database": {
+						"value": "[parameters('LS_LKUP_MAXVALUE_properties_typeProperties_database')]"
+					},
+					"LS_LKUP_MAXVALUE_properties_typeProperties_userName": {
+						"value": "[parameters('LS_LKUP_MAXVALUE_properties_typeProperties_userName')]"
+					},
+					"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_server": {
+						"value": "[parameters('LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_server')]"
+					},
+					"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_database": {
+						"value": "[parameters('LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_database')]"
+					},
+					"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_userName": {
+						"value": "[parameters('LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_userName')]"
+					},
+					"LS_SQL_EXIST_OR_NOT_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQL_EXIST_OR_NOT_properties_typeProperties_server')]"
+					},
+					"LS_SQL_EXIST_OR_NOT_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQL_EXIST_OR_NOT_properties_typeProperties_database')]"
+					},
+					"LS_SQL_EXIST_OR_NOT_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQL_EXIST_OR_NOT_properties_typeProperties_userName')]"
+					},
+					"LS_SQL_MIGRATION_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQL_MIGRATION_properties_typeProperties_server')]"
+					},
+					"LS_SQL_MIGRATION_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQL_MIGRATION_properties_typeProperties_database')]"
+					},
+					"LS_SQL_MIGRATION_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQL_MIGRATION_properties_typeProperties_userName')]"
+					},
+					"LS_SQL_PARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_PARQUET_properties_typeProperties_url')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}

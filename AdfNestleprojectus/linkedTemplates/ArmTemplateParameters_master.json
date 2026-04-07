@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "AdfNestleprojectus"
+		},
+		"LS_LKUP_MAXVALUE_password": {
+			"value": ""
+		},
+		"LS_ON_PREM_SQL_SERVER_DW_password": {
+			"value": ""
+		},
+		"LS_SQL_EXIST_OR_NOT_password": {
+			"value": ""
+		},
+		"LS_SQL_MIGRATION_password": {
+			"value": ""
+		},
+		"LS_SQL_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_LKUP_MAXVALUE_properties_typeProperties_server": {
+			"value": "."
+		},
+		"LS_LKUP_MAXVALUE_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_LKUP_MAXVALUE_properties_typeProperties_userName": {
+			"value": "Meghana"
+		},
+		"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_server": {
+			"value": "."
+		},
+		"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_userName": {
+			"value": "Meghana"
+		},
+		"LS_SQL_EXIST_OR_NOT_properties_typeProperties_server": {
+			"value": ".\\SQLEXPRESS"
+		},
+		"LS_SQL_EXIST_OR_NOT_properties_typeProperties_database": {
+			"value": "Movies"
+		},
+		"LS_SQL_EXIST_OR_NOT_properties_typeProperties_userName": {
+			"value": "admin"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_server": {
+			"value": "."
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_userName": {
+			"value": "Meghana"
+		},
+		"LS_SQL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevnestleprojectus.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
