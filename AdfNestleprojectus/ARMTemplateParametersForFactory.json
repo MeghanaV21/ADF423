@@ -5,47 +5,38 @@
 		"factoryName": {
 			"value": "AdfNestleprojectus"
 		},
-		"LS_LKUP_MAXVALUE_password": {
+		"LS_LKUP_MAX_VALUE_password": {
 			"value": ""
 		},
-		"LS_ON_PREM_SQL_SERVER_DW_password": {
+		"LS_ONPREM_SQLSERVER_password": {
 			"value": ""
 		},
-		"LS_SQL_EXIST_OR_NOT_password": {
+		"LS_SQLTABLE_PARQUET_accountKey": {
 			"value": ""
 		},
 		"LS_SQL_MIGRATION_password": {
 			"value": ""
 		},
-		"LS_SQL_PARQUET_accountKey": {
-			"value": ""
-		},
-		"LS_LKUP_MAXVALUE_properties_typeProperties_server": {
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
 			"value": "."
 		},
-		"LS_LKUP_MAXVALUE_properties_typeProperties_database": {
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
 			"value": "sqlmigration"
 		},
-		"LS_LKUP_MAXVALUE_properties_typeProperties_userName": {
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
 			"value": "Meghana"
 		},
-		"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_server": {
+		"LS_ONPREM_SQLSERVER_properties_typeProperties_server": {
 			"value": "."
 		},
-		"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_database": {
+		"LS_ONPREM_SQLSERVER_properties_typeProperties_database": {
 			"value": "sqlmigration"
 		},
-		"LS_ON_PREM_SQL_SERVER_DW_properties_typeProperties_userName": {
+		"LS_ONPREM_SQLSERVER_properties_typeProperties_userName": {
 			"value": "Meghana"
 		},
-		"LS_SQL_EXIST_OR_NOT_properties_typeProperties_server": {
-			"value": ".\\SQLEXPRESS"
-		},
-		"LS_SQL_EXIST_OR_NOT_properties_typeProperties_database": {
-			"value": "Movies"
-		},
-		"LS_SQL_EXIST_OR_NOT_properties_typeProperties_userName": {
-			"value": "admin"
+		"LS_SQLTABLE_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevnestleprojectus.dfs.core.windows.net/"
 		},
 		"LS_SQL_MIGRATION_properties_typeProperties_server": {
 			"value": "."
@@ -55,9 +46,6 @@
 		},
 		"LS_SQL_MIGRATION_properties_typeProperties_userName": {
 			"value": "Meghana"
-		},
-		"LS_SQL_PARQUET_properties_typeProperties_url": {
-			"value": "https://adlsdevnestleprojectus.dfs.core.windows.net/"
 		}
 	}
 }
