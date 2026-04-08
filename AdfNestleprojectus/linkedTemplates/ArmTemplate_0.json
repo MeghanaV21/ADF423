@@ -586,7 +586,8 @@
 								"referenceName": "DS_SQL_MIGRATION",
 								"type": "DatasetReference",
 								"parameters": {}
-							}
+							},
+							"firstRowOnly": false
 						}
 					},
 					{
@@ -606,6 +607,7 @@
 								"value": "@activity('LKUP_SQL_WATERMARK_DW').output.value",
 								"type": "Expression"
 							},
+							"isSequential": true,
 							"activities": [
 								{
 									"name": "EXEC_SQL_INCREMENTAL",
